@@ -20,7 +20,12 @@ if __name__ == "__main__":
     print("3. Multiply")
     print("4. Divide")
 
-    choice = input("Enter choice (1/2/3/4): ")
+    while True:
+        choice = input("Enter choice (1/2/3/4): ")
+        if choice in ('1', '2', '3', '4'):
+            break
+        else:
+            print("Invalid choice. Please enter 1, 2, 3, or 4.")
 
     if choice in ('1', '2', '3', '4'):
         try:
